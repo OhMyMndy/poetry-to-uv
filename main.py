@@ -134,7 +134,10 @@ def convert_to_pep508(dep_name, dep_spec):
     return dependency.to_pep_508()
 
 
-# Example Usage
-if __name__ == "__main__":
+def main():
     transform_poetry_to_project("pyproject.toml", "pyproject_transformed.toml")
 
+
+# Example Usage
+if __name__ == "__main__":
+    main()

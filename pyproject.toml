@@ -1,10 +1,17 @@
 [project]
-name = "poetry-to-uv"
-version = "0.1.0"
-description = "Add your description here"
+name = "poetry2uv"
+version = "0.1.2"
+description = "Convert Poetry pyproject.toml to UV pyproject.toml"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "poetry>=1.8.5",
-    "toml>=0.10.2",
-]
+dependencies = ["poetry>=1.8.5", "toml>=0.10.2"]
+
+
+[project.urls]
+source = "https://github.com/OhMyMndy/poetry2uv"
+
+[console_script]
+poetry2uv = "main:main"
+
+[project.scripts]
+poetry2uv = "main:main"
